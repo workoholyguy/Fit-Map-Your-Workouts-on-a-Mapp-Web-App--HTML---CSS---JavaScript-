@@ -1,6 +1,8 @@
 # Fit Map Your Workouts on a Mapp Web-App (HTML + CSS + JavaScript)
  Web application designed to help users track their running and cycling workouts through an interactive map interface, leveraging geolocation and local storage for a seamless and persistent workout logging experience.
 
+# DEMO: [Fit Map Video Demo](https://website-name.com](https://www.loom.com/share/21a3983dacc646548872a52db8ec0a2a?sid=344b014c-ee86-4bb6-9816-ee9383e9e337 )
+
 # Fit Map
 
 Fit Map is a web application designed to track and map your workout sessions, providing a visual and data-driven approach to monitoring your fitness activities.
