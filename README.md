@@ -28,8 +28,8 @@ Fit Map is a web application designed to track and map your workout sessions, pr
 
 1. Logging Workouts:
 
-* Approve the Geolocation Permission
-["D:/HOMEWORK/VII. UDEMY/JAVA SCRIPT/complete-javascript-course-master/15-Mapty/starter/Usage 1.png"]
+* **Approve the Geolocation Permission:**
+
 * Fill in the form with workout details (type, distance, duration, etc.).
 * Click anywhere on the map to start logging a new workout.
 * Click the "OK" button to save the workout.
