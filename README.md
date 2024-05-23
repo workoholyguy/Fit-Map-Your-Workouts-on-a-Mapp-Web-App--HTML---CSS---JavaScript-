@@ -43,9 +43,9 @@ Fit Map is a web application designed to track and map your workout sessions, pr
 
 ## Files
 
-* index.html: Contains the structure of the web page, including the form for adding workouts and the container for displaying the map.
-* style.css: Styles the HTML elements to provide a visually appealing interface.
-* script.js: Implements the core functionality of the application, including event handling, data storage, and map interactions.
+* **index.html**: Contains the structure of the web page, including the form for adding workouts and the container for displaying the map.
+* **style.css**: Styles the HTML elements to provide a visually appealing interface.
+* **script.js**: Implements the core functionality of the application, including event handling, data storage, and map interactions.
 
 ## Credits
 * The Design and Web-Site Idea Inspired by Jonas Schmedtmann
