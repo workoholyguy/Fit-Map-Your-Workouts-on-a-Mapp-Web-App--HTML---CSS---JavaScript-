@@ -55,6 +55,100 @@ Fit Map is a web application designed to track and map your workout sessions, pr
 <img width="1439" alt="Usage 5" src="./Usage 5.png">
 <img width="1439" alt="Usage 6" src="./Usage 6.jpeg">
 
+## STRUCTURE:
+* Whole App Forkflow: 
+<img width="1439" alt="FitJourney -flowchart." src="./FitJourney -flowchart.png">
+
+### Workflow:
+
+**Page Loads:**
+- Get the user's current location coordinates.
+- Render the map centered on the current location.
+- Load workouts from local storage and render them on the map and in the list.
+
+**User Interactions:**
+- **Click on Map:**
+  - Render the workout form to input workout details.
+  - User submits the new workout form, which adds the workout to the list and places a marker on the map.
+  
+- **Click on Workout in List:**
+  - Move the map to the corresponding workout marker.
+
+- **Submit Workout Form:**
+  - Save the new workout details.
+  - Update the UI with the new workout in the list and on the map.
+  - Store the new workout in local storage.
+
+**Flowchart:**
+- Page loads.
+- Get current location coordinates.
+- Render map on current location.
+- Load workouts from local storage (if any).
+- User clicks on the map to add a workout.
+- Render workout form.
+- User submits the workout form.
+- Render workout on map and in list.
+- Store workout in local storage.
+- User can click on workout in list to move map to workout location.
+
+* Object Architecture: 
+<img width="1439" alt="Final Architecture" src="./FitJourney-architecture-final.png">
+
+#### Class Structure and Relationships
+
+**Class Workout:**
+- **Properties:**
+  - `id`: Unique identifier for the workout.
+  - `distance`: Distance of the workout.
+  - `duration`: Duration of the workout.
+  - `coords`: Coordinates where the workout took place.
+  - `date`: Date when the workout was logged.
+  - `clicks`: Number of times the workout entry was clicked.
+
+- **Methods:**
+  - `constructor()`: Initializes a new workout instance with the given properties.
+  - `click()`: Handles the click event on the workout entry.
+  - `_setDescription()`: Sets a description for the workout.
+
+**Child Class Running (inherits from Workout):**
+- **Additional Properties:**
+  - `cadence`: Steps per minute.
+  - `pace`: Minutes per kilometer.
+
+- **Methods:**
+  - `constructor()`: Initializes a new running workout with specific properties.
+  - `calcPace()`: Calculates the pace of the running workout.
+
+**Child Class Cycling (inherits from Workout):**
+- **Additional Properties:**
+  - `elevationGain`: Elevation gain during the workout.
+  - `speed`: Speed of the cycling workout.
+
+- **Methods:**
+  - `constructor()`: Initializes a new cycling workout with specific properties.
+  - `calcSpeed()`: Calculates the speed of the cycling workout.
+
+**Class App:**
+- **Properties:**
+  - `workouts`: Array to store all workout instances.
+  - `map`: The Leaflet map instance.
+  - `mapZoomLevel`: The zoom level for the map.
+
+- **Methods:**
+  - `constructor()`: Initializes the application and sets up event listeners.
+  - `_getPosition()`: Gets the user's current position.
+  - `_loadMap(position)`: Loads the map centered on the given position.
+  - `_showForm()`: Displays the workout form.
+  - `_toggleElevationField()`: Toggles the visibility of the elevation field based on the workout type.
+  - `_newWorkout()`: Creates a new workout and adds it to the map and the list.
+  - `_renderWorkout(workout)`: Renders the workout entry in the list.
+  - `_renderWorkoutMarker(workout)`: Adds a marker for the workout on the map.
+  - `_setLocalStorage()`: Saves workouts to local storage.
+  - `_getLocalStorage()`: Retrieves workouts from local storage.
+  - `_moveToPopup(e)`: Moves the map to the workout marker when the workout entry is clicked.
+  - `reset()`: Clears all workouts from the map and local storage.
+
+
 ## Files
 
 * **index.html**: Contains the structure of the web page, including the form for adding workouts and the container for displaying the map.
