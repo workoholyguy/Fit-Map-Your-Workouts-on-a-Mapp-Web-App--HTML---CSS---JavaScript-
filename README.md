@@ -3,7 +3,7 @@
 
 # Fit Map
 
-Fit Map is a web application designed to track and map your workout sessions, providing a visual and data-driven approach to monitor your fitness activities.
+Fit Map is a web application designed to track and map your workout sessions, providing a visual and data-driven approach to monitoring your fitness activities.
 
 ## Features
 
@@ -29,19 +29,25 @@ Fit Map is a web application designed to track and map your workout sessions, pr
 1. Logging Workouts:
 
 * **Approve the Geolocation Permission:**
-<img width="1439" alt="Slide 1" src="./Usage 1.png">
+<img width="1439" alt="Usage 1" src="./Usage 1.png">
+* Click anywhere on the map to start logging a new workout using the form that appears on a sidebar
 * Fill in the form with workout details (type, distance, duration, etc.).
-* Click anywhere on the map to start logging a new workout.
-* Click the "OK" button to save the workout.
+* --> Click "Enter" to submit the work, which will create a workout Item and a Pin on a map.
+<img width="1439" alt="Usage 2" src="./Usage 2.png">
 
 2. Viewing Workouts:
 
 * Logged workouts will appear in the list on the sidebar.
-* Click on any workout in the list to highlight its location on the map.
+* The page uses Web-Browser Local Storage to implement persistence.
+<img width="1439" alt="Usage 3" src="./Usage 3.png">
+* Click on any workout in the list to highlight its location on the map, the app will pan the map above the pin to which that workout relates.
+<img width="1439" alt="Usage 4" src="./Usage 4.png">
 
 3. Clearing Workouts:
 
-* Use the "Clear All Workouts" button to remove all logged workouts from the list and local storage.
+* Use the "Clear All Workouts" button to remove all logged workouts from the list and local storage. (Note You May Click Ctrl/Command+Shift+I to Summon Developer Tools --> Application --> Storage --> Local Storage). Click "Clear All Workouts"
+<img width="1439" alt="Usage 5" src="./Usage 5.png">
+<img width="1439" alt="Usage 6" src="./Usage 6.png">
 
 ## Files
 
