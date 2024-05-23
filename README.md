@@ -44,7 +44,6 @@ Fit Map is a web application designed to track and map your workout sessions, pr
 * The page uses Web-Browser Local Storage to implement persistence.
 <img width="1439" alt="Usage 3" src="./Usage 3.png">
 
-:
 * Click on any workout in the list to highlight its location on the map, the app will pan the map above the pin to which that workout relates.
 <img width="1439" alt="Usage 4" src="./Usage 4.jpeg">
 
