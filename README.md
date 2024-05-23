@@ -29,7 +29,7 @@ Fit Map is a web application designed to track and map your workout sessions, pr
 1. Logging Workouts:
 
 * **Approve the Geolocation Permission:**
-
+1[Usage 1][./Usage 1.png]
 * Fill in the form with workout details (type, distance, duration, etc.).
 * Click anywhere on the map to start logging a new workout.
 * Click the "OK" button to save the workout.
